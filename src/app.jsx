@@ -1,4 +1,5 @@
 import Painting from "./components/painting"
+import Section from "./components/section"
 
 export default function App() {
 // const isOnline = true
@@ -11,9 +12,15 @@ export default function App() {
                 <div>{el}</div>
             ))} */}
 
-            <Painting title={"Sasha"} price={5} />
+           
+
+            <Section title="Top 100">
+                 <Painting title={"Sasha"} price={5} />
+            </Section>
+            
+            <Section />
 
 
         </div>
     )
-} 
+}  
