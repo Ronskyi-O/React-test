@@ -1,5 +1,6 @@
 // import React from 'react';
-import ReactDOM  from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
+import App from './app';
 
 // const element = React.createElement('div', { a: 5, b: 22, children: 'Hello World' });
 
@@ -8,21 +9,28 @@ import ReactDOM  from 'react-dom/client';
 
 // const element = React.createElement('div', { children: [elem1, elem2 ]})
 
-const elem1 = <span>Hello</span>
-const elem2 = <span>World</span>
+// const elem1 = <span>Hello</span>
+// const elem2 = <span>World</span>
 
-const jsxElement = (
-  <div>
-    {elem1}
-    {elem2}
-  </div>
-)
+// const jsxElement = (
+//   <div>
+//     {elem1}
+//     {elem2}
+//   </div>
+// )
 
-// const jsxElement = <div>Just {elem1} {elem2}, beaches</div>
+// // const jsxElement = <div>Just {elem1} {elem2}, beaches</div>
 
-console.log(jsxElement);
+// console.log(jsxElement);
 
-ReactDOM.createRoot(document.querySelector('#root')).render(jsxElement)
+// ReactDOM.createRoot(document.querySelector('#root')).render(jsxElement)
+
+
+// ===================================================================
+// COMPONENTS
+
+ReactDOM.createRoot(document.querySelector('#root')).render(<App />)
+
 
  
 // ====================================================================
